@@ -8,7 +8,7 @@ This is a **Single Page web Application** based on Java and React, that was prod
 **Front-End:** React, Bootstrap, JQuery, Javascript, HTML, CSS <br>
 
 **Landing page:** <br>
-<img src="readme-description/first_page.png" width="900"> <br>
+<img src="https://github.com/geopand/AFDEMP_CB6_TeamProject/blob/master/readme-description/first_page.png"> <br>
 
 **The page where the user adds a new blood request to the system:**<br>
-<img src="readme-description/create_request.png" width="900">
+<img src="https://github.com/geopand/AFDEMP_CB6_TeamProject/blob/master/readme-description/create_request.png" width="900">
