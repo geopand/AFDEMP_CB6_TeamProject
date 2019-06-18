@@ -2,8 +2,8 @@
 
 This is a **Single Page web Application** based on Java and React, that was produced for the completion of the AFDEMP Coding Bootcamp 6.
 
-**Technologies and programmings languages used:**<br>
-**Back End:** Java, Spring MVC<br>
+**Technologies and programming languages used:**<br>
+**Back End:** Java, Spring MVC framework<br>
 **Database:** MySQL<br>
 **Front-End:** React, Bootstrap, JQuery, Javascript, HTML, CSS <br>
 
