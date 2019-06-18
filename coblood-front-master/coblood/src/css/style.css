@@ -1,0 +1,308 @@
+/* important for design - footer's location */
+/* 
+    sets default min height of page, no matter its content // 350px is max integer we can add
+    Important!!! ->  we must add className="content" at starting div in all pages.
+*/
+.content {
+    min-height: calc(100vh - 150px) !important; 
+}
+
+/* background in register and login pages */
+.floatbox_bg{
+
+    max-width: 100% !important;
+    max-height: 100% !important;
+    background-image: url(../img/floatbox_bg.png) !important;
+    background-position: left 0px bottom 0px;
+    background-size:-ms-fill-upper;
+    background-repeat: no-repeat;
+}
+
+/* Paints red the borders of the form fields  */
+.form-control:focus {
+    border-color: #AA0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+/* Form fields transparent after they are filled */
+input:not(:placeholder-shown) {
+    background-color: transparent !important;
+}
+
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active {
+    background-color: rgb(250, 223, 223) !important;
+    border-color: #AA0000;
+    color: rgb(59, 59, 59);
+}
+
+/*  Navbar CSS start --------------------------------------------*/
+.navbar {
+    /* background-color: rgb(221, 173, 173) !important; */
+    /* background-color: #ec5252!important; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #1e1121 !important;
+    /* #b83a4a */
+    transition: all ease .8s;
+}
+
+
+.navbar.change {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    background-color: #45171d !important;
+    transition: all ease .8s;
+}
+
+/*  Navbar CSS end */
+
+.dropdown-item.active, .dropdown-item:active, .dropdown-item:hover{
+  color: rgb(255, 255, 255)!important;
+  background-color:#DC3545!important
+}
+
+
+
+/* Footer start */
+#footer {
+    margin-bottom: 0;
+    width: 100%;
+    height: 360px;
+    background-color: #455a64 !important;
+    background-image: url(../img/tree.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: right 10px top 10px;
+    display: block;
+    position: absolute;
+}
+
+
+
+/*  Social Media Buttons */
+.btn-social {
+    width: 100px;
+    position: relative;
+    opacity: 1;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-social:hover {
+    opacity: 0.5;
+    transform: scale(1.3, 1.3);
+}
+
+.copyright {
+    position: absolute!important;
+    margin-top: 350px;
+    width: 100%;
+}
+
+.social {
+    padding-top: 100px;
+}
+
+/* Footer ends */
+
+@media only screen and (max-width: 1000px) {
+    .social {
+        padding-top: 0px !important;
+        bottom: 0;
+    }
+}
+
+/*  Login Form */
+#login-form-container .invalid-feedback {
+    text-align: left;
+}
+
+
+#login-form-container h1, h2 {
+    text-align: center;
+    width: 100%;
+    color: #252525;
+    /* margin-top: 80px; */
+}
+
+#login-form-container {
+    padding-top: 50px;
+    width: 500px;
+}
+
+#login-form-container label {
+    display: block;
+    float: left;
+}
+
+/*  Register Form */
+#register-form-container {
+    padding-top: 50px;
+    width: 500px;
+}
+
+/*  Register Form */
+#requestBlood-form-container {
+    padding-top: 50px;
+    width: 800px;
+}
+
+#register-form-container label, #requestBlood-form-container label {
+    display: block;
+    float: left;
+}
+
+#register-form-container h1, 
+#register-form-container h2, 
+#requestBlood-form-container h1,
+#requestBlood-form-container h2 {
+    text-align: center;
+    width: 100%;
+    color: #252525;
+    /* color: #aa0000; */
+    /* margin-top: 80px; */
+}
+
+#register-form-container .invalid-feedback {
+    text-align: left;
+}
+
+
+
+/* Error Page css  start*/
+#notfound {
+    position: relative;
+    height: 100vh;
+  }
+  #notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .notfound {
+    max-width: 520px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .notfound .notfound-404 {
+    position: relative;
+    height: 240px;
+  }
+  .notfound .notfound-404 h1 {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 252px;
+    font-weight: 900;
+    margin: 0px;
+    color: #262626;
+    text-transform: uppercase;
+    letter-spacing: -40px;
+    margin-left: -20px;
+  }
+  .notfound .notfound-404 h1>span {
+    text-shadow: -8px 0px 0px #fff;
+  }
+  .notfound .notfound-404 h3 {
+    font-family: 'Cabin', sans-serif;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #262626;
+    margin: 0px;
+    letter-spacing: 3px;
+    padding-left: 6px;
+  }
+  .notfound h2 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+  @media only screen and (max-width: 767px) {
+    .notfound .notfound-404 {
+      height: 200px;
+    }
+    .notfound .notfound-404 h1 {
+      font-size: 200px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .notfound .notfound-404 {
+      height: 162px;
+    }
+    .notfound .notfound-404 h1 {
+      font-size: 162px;
+      height: 150px;
+      line-height: 162px;
+    }
+    .notfound h2 {
+      font-size: 16px;
+    }
+  }
+/* Error Page css  ends*/
+
+
+/*  Faq Page Accordion */
+
+.accordion {
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+}
+.accordion .accordion-item:first-child .title {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.accordion .accordion-item:last-child .title {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.accordion .accordion-item .title {
+  background-color: #f6f6f6;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.accordion .accordion-item .title:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+.accordion .accordion-item .panel {
+  max-height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+}
+.accordion .accordion-item.active .title {
+  background-color: #eeeeee;
+}
+.accordion .accordion-item.active .title:after {
+  content: '\2796';
+  /* Unicode character for "minus" sign (-) */
+}
+.accordion .accordion-item.active .panel {
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+}
